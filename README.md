@@ -1,4 +1,4 @@
-genesis-responsive-menu
+Responsive toggle menu for Genesis child theme
 =======================
 
 Change genesis child theme menu to toggle and push down on smaller screens.
