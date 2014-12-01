@@ -1,0 +1,222 @@
+html {font-size: 62.5%; /* 10px browser default */}
+body {color: #2b0a26; font-family: Georgia, Times, "Times New Roman", serif; font-size: 17px; line-height: 1.4em;}
+h1 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.site-container {margin: 0 auto; max-width: 1140px;}
+.site-inner {display: block; float: left; overflow: hidden; padding: 5%; width: 90%;}
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+.site-header {
+	background: #ddd; 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-weight: 700; 
+	min-height: 124px; 
+	width: 100%;
+}
+.header-image .site-header {
+	padding: 0;
+}
+.title-area {
+	clear: both; 
+	overflow: hidden; 
+	padding: 0; }
+.site-title {
+	font-size: 28px; 
+	font-size: 2.8rem; 
+	margin-left: 20px; 
+	margin-right: 20px; 
+	text-transform: uppercase;
+}
+.site-title, .site-description {
+	display: inline-block; 
+	float: left;
+}
+.site-description {
+	line-height: 45px;
+}
+
+/* Genesis Primary Navigation
+--------------------------------------------- */
+.toggleMenu {
+	background: #000; 
+	color: #fff;
+	display: none; 
+	float: right; 
+	padding: 10px 5px 10px 10px; 
+	position: absolute; 
+	right:12px; 
+	text-transform: uppercase; 
+	top:12px;
+}
+.toggleMenu span {
+	background: url('images/toggleArrow.png') no-repeat top right;
+	background-position-y: -14px; 
+	display: block; 
+	float: right; 
+	height: 14px; 
+	margin: 4px 0; 
+	width: 32px;
+}
+.toggleMenu.active span {
+	background-position-y: 0;
+}
+.nav-primary ul {
+	background: #fff;
+}
+.nav-primary a:hover {
+	color: blue;
+}
+.nav-primary .sub-menu a:hover, a.toggleMenu:hover {
+	color: #666;
+}
+.genesis-nav-menu {
+	font-size: 15px; 
+	letter-spacing: 1px; 
+	letter-spacing: 0.1rem; 
+	line-height: 1.5; 
+	list-style: none;
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+	*zoom: 1;
+}
+.genesis-nav-menu:before, .genesis-nav-menu:after {
+	content: " ";
+	display: table;
+}
+.genesis-nav-menu:after {
+	clear: both;
+}
+.genesis-nav-menu ul {
+	list-style: none;
+}
+.genesis-nav-menu a {
+	display: block;
+	padding: 9px 30px;
+	padding: 0.9rem 3rem;
+	text-transform: uppercase;
+}
+.genesis-nav-menu li {
+	position: relative;
+}
+.genesis-nav-menu > li {
+	float: left;
+	margin: 0;
+	text-align: left;
+}
+.genesis-nav-menu > li > .parent {
+    background-image: url('images/downArrow.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.genesis-nav-menu > li > a {
+	display: block;
+}
+.genesis-nav-menu li ul {
+	background: none; 
+	left: -9999px; 
+	margin: 0 0 0 -20px; 
+	position: absolute; 
+	width: 200px;
+}
+.genesis-nav-menu > li.hover > ul {
+	left: 0;
+}
+.genesis-nav-menu li li.hover ul {
+	left: 100%;
+	top: 0;
+}
+.genesis-nav-menu li li a {
+	background: #000;
+	border: none;
+	border-bottom: 1px solid #eee;
+	color: #fff;
+	display: block;
+	opacity: 0.85;
+	padding-left:5%;
+	padding-right:5%;
+	position: relative;
+	z-index:100;
+}
+
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+.site-footer {
+	clear: both;
+	display: block;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-size: 13px;
+	padding: 40px 0;
+	width:100%;
+}
+.site-footer .wrap {
+	border-top: 4px solid #ccc; 
+	padding-top: 20px;
+}
+.site-footer p {
+	margin: 0; 
+	text-align: center;
+}
+
+
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+
+/* Mobile (portrait and landscape)
+--------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+	p.site-description {
+		line-height: 1.3em;
+		margin-left: 20px; 
+		margin-top: 0;
+	}
+	.genesis-nav-menu li ul {
+		margin: 0;
+		width: 100%;
+	}
+    .active {
+    	display: block;
+    }
+    .genesis-nav-menu > li {
+    	border-bottom: 1px #ddd solid;
+    	float: none; 
+    	padding: 0 10%; 
+    	width: 80%;
+    }
+    .genesis-nav-menu .menu-item {
+    	padding: 0 10%;
+    }
+    .genesis-nav-menu > li > .parent {
+    	background-position: 95% 50%;
+    }
+    .genesis-nav-menu li li .parent {
+    	background-image: url("images/downArrow.png"); 
+    	background-repeat: no-repeat; 
+    	background-position: 95% 50%;
+    }
+    .genesis-nav-menu ul {
+    	display: block;
+    	width: 100%;
+    }
+    .genesis-nav-menu > li.hover > ul, .genesis-nav-menu li li.hover ul {
+    	position: static;
+    }
+	.genesis-nav-menu .sub-menu {
+		margin: 0;
+		padding: 0;
+	}
+	.genesis-nav-menu .sub-menu .menu-item {
+		padding: 0;
+	}
+	.genesis-nav-menu li li a {
+		opacity: 1;
+	}
+	
+}
