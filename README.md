@@ -12,3 +12,5 @@ This will create a responsive menu that will change upon reaching a screen width
 The main menu will become hidden, adding a 'MENU' button, top right instead. 
 The 'MENU' button will toggle the navigation and push the content down when open.
 This also style a sub navigation.
+
+<a href="http://elzette.github.io/genesis-responsive-menu/">View Demo</a>
